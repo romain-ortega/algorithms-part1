@@ -5,7 +5,7 @@ class QuickUnion
 {
 	private:
 		int *_id;
-		unsigned int _n;
+		int _root(int i) const;
 
 	public:
 		QuickUnion(unsigned int n);
@@ -14,7 +14,6 @@ class QuickUnion
 		QuickUnion & operator=(const QuickUnion &ref);
 
 		bool find(int p, int q);
-		int root(int i) const;
 		void ft_union(int p, int q);
 		int *getId() const;
 		unsigned int getN() const;

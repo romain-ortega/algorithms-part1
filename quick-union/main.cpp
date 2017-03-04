@@ -16,11 +16,8 @@ int main(void)
 	uf.ft_union(3, 8);
 	uf.ft_union(9, 8);
 
-	// What is their root
-	std::cout << uf.root(6) << std::endl;
-	std::cout << uf.root(8) << std::endl;
-	std::cout << uf.root(4) << std::endl;
-	std::cout << uf.root(9) << std::endl;
+	// They are all connected
+	// Root = 8
 
 	// Are they connected ?
 	std::cout << uf.find(6, 9) << std::endl;
