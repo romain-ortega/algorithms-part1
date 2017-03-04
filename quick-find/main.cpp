@@ -1,4 +1,5 @@
 #include "UF.hpp"
+#include <iostream>
 int main(void)
 {
 	int n;
